@@ -1,0 +1,38 @@
+
+
+<div class="form-container">
+  <h2>Reimbursement Form</h2>
+  <form [formGroup]="reimbursementForm" (ngSubmit)="onSubmit()">
+    <div class="form-group-container"> 
+      <div class="form-group">
+        <label for="purchaseDate">Purchase Date</label>
+        <input type="date" id="purchaseDate" formControlName="purchaseDate" required />
+      </div>
+
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" formControlName="amount" required />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="receipt">Receipt Upload</label>
+        <input type="file" id="receipt" (change)="onFileChange($event)" required />
+      </div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <div *ngIf="successMessage" class="alert alert-success mt-2">
+    {{ successMessage }}
+  </div>
+  
+  <div *ngIf="errorMessage" class="alert alert-danger mt-2">
+    {{ errorMessage }}
+  </div>
+  
+</div>
+

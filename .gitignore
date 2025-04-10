@@ -3,3 +3,6 @@
 /ReimbursementApi/obj/*
 /ReimbursementApiTest/bin/*
 /ReimbursementApiTest/obj/*
+/reimbursement-app/.angular/*
+/reimbursement-app/.vscode/*
+/reimbursement-app/node_modules/*
