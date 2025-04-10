@@ -65,7 +65,7 @@ ng serve
 
 ### 5. Running Front End Tests
 ```bash
-cd ReimbursementUI/reimbursement-app
+cd /reimbursement-app
 npm test
 
 ```
