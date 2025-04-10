@@ -57,7 +57,7 @@ dotnet test
 #### 5. Run The Angular App.
 ```bash
 cd..
-cd ReimbursementUI/reimbursement-app
+cd /reimbursement-app
 npm install
 ng serve
 ```
